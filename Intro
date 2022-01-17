@@ -1,29 +1,37 @@
 
+-------------------------------------------------------------------------
+
 Elasticsearch is a real-time distributed and open source full-text search and analytics engine
 
-----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 Architecture:
 
-* Node
-	It refers to a single running instance of Elasticsearch.
-	Single physical and virtual server accommodates multiple nodes depending upon the capabilities of their physical resources like RAM, storage and processing power.
+* Document:
 
-* Cluster
-	It is a collection of one or more nodes.
+	* It is a collection of fields in a specific manner defined in JSON format.
 
-* Document
-	It is a collection of fields in a specific manner defined in JSON format.
+* Index:
 
-* Index
-	It is a collection of different type of documents and their properties
-	Is like Table in RDBMS
+	* It is a collection of different type of documents and their properties
+	* Is like Table in RDBMS
 
-* Shard
-	Indexes are horizontally subdivided into shards
-	Index also uses the concept of shards to improve the performance
+* Shard:
 
-* Replicas
-	Elasticsearch allows a user to create replicas of their indexes and shards.
+	* Indexes are horizontally subdivided into shards
+	* Index uses the concept of shards to improve the performance
 
-----------------------------------------------------------------------------------------------------
+* Replicas:
+
+	* Replicas of indexes and shards.
+
+* Node:
+
+	* It refers to a single running instance of Elasticsearch.
+	* Single physical and virtual server accommodates multiple nodes depending upon the capabilities of their physical resources like RAM, storage and processing power.
+
+* Cluster:
+
+	* It is a collection of one or more nodes.
+
+-------------------------------------------------------------------------
